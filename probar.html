@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Facebook Meta Tags -->
+<meta property="og:url" content="http://adiser.byethost7.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="No se visualiza la imagen del Open Graph">
+<meta property="og:description" content="¡Hola! He instalado el módulo de Open Graph en mi Prestashop y he añadido una imagen .jpg. Cuando voy a No me coge la imagen que he añadido en el Ope...">
+<meta property="og:image" content="http://adiser.byethost7.com/soloLogo.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="webempresa.com">
+<meta property="twitter:url" content="http://adiser.byethost7.com/">
+<meta name="twitter:title" content="No se visualiza la imagen del Open Graph">
+<meta name="twitter:description" content="¡Hola! He instalado el módulo de Open Graph en mi Prestashop y he añadido una imagen .jpg. Cuando voy a No me coge la imagen que he añadido en el Ope...">
+<meta name="twitter:image" content="http://adiser.byethost7.com/soloLogo.png">
+
+    <style>
+        body{
+            min-height: 300dvh;
+        }
+        .container-links{
+            width: 100px;
+            aspect-ratio: 1/1;
+            background-color: brown;
+            display: none;
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+            flex-direction: row;
+            align-items: center;
+
+            img{
+                width: 50%;
+                aspect-ratio: 1/1;
+            }
+        }
+        .mostrarse{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container-links" >
+        <img src="arrow_circle_up.svg" alt="" class="button">
+        <img src="whatsapp.svg" alt="" srcset="">
+    </div>
+</body>
+
+<script>
+
+    let button=document.querySelector('.button')
+    
+
+    button.addEventListener("click", () => 
+        window.scroll({ 
+                top: 0,
+                behavior: "smooth",
+         })
+    );
+       
+
+    let container=document.querySelector('.container-links')
+
+    window.onscroll = function (){
+        // Obtenemos la posicion del scroll en pantall
+        var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+        // Realizamos alguna accion cuando el scroll este entre la posicion 
+        if(scroll > 500 ){
+            container.classList.add('mostrarse');
+        } else if (scroll < 500) {
+            container.classList.remove('mostrarse');
+        }
+    }
+</script>
+</html>
