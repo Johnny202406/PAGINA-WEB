@@ -4,16 +4,22 @@
     padding: 0;
     font-family: monospace;
     scroll-behavior: smooth;
-    scroll-margin-top: 3rem;
-    
+    scroll-margin-top: 4rem;
     scrollbar-width: thin;
+    --celeste:#06cdf8;
+    --azulOscuro:#044ebf;
+    --azulClaro:#059ce3;
+    --blanco:#fff;
+    --negroClaro:#3c3c3c;
+    --negroOscuro:#2a2a2a;
+
 }
 body{
     width: 100%;
     min-height: 100dvh;
 }
 .header-top{
-    background: skyblue;
+    background: linear-gradient(180deg, var(--blanco) 50%,var(--celeste) 100%);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -21,13 +27,15 @@ body{
     padding: calc(1.5rem - 1vw) 0 calc(1.5rem - 1vw) 0;
     position: sticky;
     top: 0;
+    gap: 1rem;
+
 
 
     input{
         flex: 3;
-        border-radius: max(0px, min(16px, (100% - 400px + 1px) * 9999)) / 16px;
+        border-radius: 20px;
         border: 1px solid #cfcfcf;
-        padding: 1%;
+        padding: 0.7%;
     }
     div{
         flex: 1;
@@ -49,6 +57,7 @@ body{
         width: 90% ;
         aspect-ratio: 15000/4343;
         flex: none;
+        
 
     }
     
@@ -59,12 +68,21 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: calc(0.8rem + 1vw) 0 calc(0.8rem + 1vw) 0;
+    margin: calc(0.8rem + 1vw) 0 calc(0.8rem + 1vw) 0;
+    border-top: 1px solid var(--celeste);
+    border-bottom: 1px solid var(--celeste);
     font-size: calc(0.2em + 1vw);
     div{
         display: flex;
         justify-content: space-around;
         flex: 0 1 80%;
+        align-items: center;
+        a{
+            text-decoration: none;
+            font-weight: bolder;
+            color: var(--azulClaro);
+            padding: 5px;
+        }
        
         
     }
@@ -85,33 +103,40 @@ body{
 
 .img-grande-container{
     display: flex;
-    padding: calc(0.6rem + 1vw) 2% 0 2%;
+    margin: calc(0.8rem + 1vw) 2% 0 2%;
     img{
-        border-radius: 10px;
+        border-radius: 5px;
         width: 100%;
         aspect-ratio: 189/55;
         object-fit: cover;
+        box-shadow: 1px 1px 10px var(--celeste);
+
     }
 }
 .title-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: calc(0.3em + 1vw);
+    font-size: clamp(0.9rem, 1.8vw, 1.5rem);
     padding: calc(0.8rem + 1vw) 2% 0 2%;
+
+    a{
+        text-decoration: none;
+        font-weight: bolder;
+        color: var(--azulClaro);
+    }
 }
 .card-container{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(2,1fr);
-    gap: 0.5rem;
+    gap: 1rem;
     padding: 1% 2% 0 2%;
     .card,.card-five-card{
-        color: black;
+        color: #000000;
         padding-bottom: 2%;
         text-decoration: none;
-        outline: 1px solid #cfcfcf;
-        border-radius: 10px;
+        outline: 1px solid var(--celeste);
         overflow: hidden;
         aspect-ratio:2/3;
         display: flex;
@@ -119,6 +144,8 @@ body{
         align-items: center;
         justify-content: space-between;  
         font-size: calc(1vw - 1px);
+        box-shadow: 1px 1px 10px var(--celeste);
+
 
         img{
             width: 100%;
@@ -135,6 +162,7 @@ body{
             overflow-y: scroll;
             text-decoration: none;
             scrollbar-width: none;
+        
             
 
         }
@@ -145,12 +173,13 @@ body{
             align-items: center;
         }
         .price{
-            background: skyblue;
-            border-radius: 10px;
+            background: var(--celeste);
+            border-radius: 5px;
             padding: 5%;
         }
         &:hover{
-            outline: 2px solid skyblue;
+            outline: 2px solid var(--azulClaro);
+
         }
     }
 
@@ -164,11 +193,13 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: none;
-    gap: 0.5rem;
-    padding: 0.5rem 2% 0 2%;
+    gap: 1rem;
+    padding: 1rem 2% 0 2%;
 
     .three-card,.two-card{
-        border-radius: 10px;
+        box-shadow: 1px 1px 10px var(--celeste);
+
+        border-radius: 5px;
         width: 100%;
         aspect-ratio: 36/25;
         object-fit: cover;
@@ -191,28 +222,68 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: flex-end;
+    justify-items: center;
 
 }
 
-.button,.wasap{
-    width: 55px;
-    aspect-ratio: 1/1;
-    vertical-align: bottom;
-    
-}
+
 .button,.otro{
     display: none;
 }
+.button,.mas{
+        background-color:  var(--celeste);
+        border-radius: 50%;
+        width: 35px;
+        aspect-ratio: 1/1;
+        place-content: center;
+        cursor: pointer;
+        img{
+            width: 22px;
+        }
+}
 .div-wasap{
+    display: grid;
+    place-content: center;
+    width: 55px;
+    aspect-ratio: 1/1;
+    background: #25d366;
+    border-radius: 50%;
     grid-column: 2/3;
     
-    
+    img{
+         width: 25px;
+    } 
+}
+.otro{
+    place-content: center;
+    width: 55px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    img{
+        width: 25px;
+    } 
+}
+.fb{
+    background: #4267B2;
+}
+.instagram{
+    background: linear-gradient(
+        to right,
+        #833ab4,#fd1d1d,#fcb045
+      );
+}
+.tiktok{
+    background: #000000;
+}
+.youtube{
+    background: #FF0000;
 }
 
 .items{
     display: flex;
     flex-direction: column-reverse;
     gap: 1em;
+    align-items: center;
 
 .otro{
     width: 55px;
@@ -221,7 +292,7 @@ body{
 }
 }
 .mostrarse{
-    display: block;
+    display: grid;
 }
 
 .girar{
@@ -236,6 +307,7 @@ body{
     }
 }
 .mas{
+    display: grid;
     animation: mas 100ms ease-in-out backwards ;
    
    
@@ -253,19 +325,26 @@ body{
 /* FOOTER */
 
 footer{
+    background: linear-gradient(0deg, var(--blanco) 50%,var(--celeste) 100%);
     display: flex;
     flex-direction: column;
-    padding: calc(0.8rem + 1vw) 2% 0 2%;
-    font-size: calc(1vw+1px);
+    padding: 0 2% 0 2%;
+    margin-top:calc(0.8rem + 1vw) ;
+    font-size: calc(1vw + 0.2em);
+   
     .container-footer{
         display: flex;
         flex-direction: row;
+
 
         &>*{
             flex: 1;
             display: flex;
             flex-direction: column;
+          
             &>*{
+               
+                font-size: inherit;
                 text-decoration: none;
                  color: black;
                  padding: 5px;
@@ -280,11 +359,12 @@ footer{
 }
 
 /* MEDIA QUERYS AQUI */
-@media (max-width:990px) {
+@media (max-width:1000px) {
     .header-top{
         display: grid;
         grid-template-columns: repeat(8,1fr);
         grid-template-rows: 1fr max-content;
+        column-gap: 0;
         row-gap: 0.2rem;
         padding: 0 0 calc(0.2rem + 1vw) 0;
         input{
@@ -293,7 +373,7 @@ footer{
             align-self: flex-start;
         }
         .container-logo{
-            grid-column: 2/7;
+            grid-column: 2/8;
             grid-row: 1/2;
         }
         .pedidos{
@@ -303,7 +383,7 @@ footer{
         div{
            
             img{
-                width: 50% !important;
+                width: 45% !important;
                 flex: none;
             }
         
@@ -349,7 +429,7 @@ footer{
 
 
 
-@media (max-width:700px) {
+@media (max-width:780px) {
   
     .card-container{
         grid-template-columns: repeat(3,1fr);
@@ -381,7 +461,7 @@ footer{
     .header-top{
         div{
             img{
-                width: 80% !important;
+                width: 70% !important;
             }
         }
     }
@@ -394,7 +474,7 @@ footer{
         }
 
         .card,.card-five-card{
-            font-size: calc(5px + 1vw);
+            font-size: calc(6px + 1vw);
         }
         
     }
@@ -424,16 +504,16 @@ footer{
         flex-direction: column !important;
     }
     footer{
-        font-size: calc(5px + 1vw);
+        font-size: calc(6px + 1vw);
     
     }
 }
-@media (max-width:170px) {
+@media (max-width:270px) {
     .img-grande-container{
-        padding-top: calc(0.8rem - 1vw);
+        margin-top: calc(0.8rem - 1vw);
     }
     .title-section{
-        padding-top: calc(0.8rem - 1vw);
+        margin-top: calc(0.8rem - 1vw);
     }
     .card-container{
         grid-template-columns: repeat(1,1fr);
@@ -456,13 +536,7 @@ footer{
     .container-links{
         bottom: 0.5rem;
         right: 0.5rem;
-        &>*{
-            width: 100% !important;
-            &>*{
-                width: 100% !important;
-            }
         
-        }
     }
     
 }
