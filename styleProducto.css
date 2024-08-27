@@ -99,164 +99,6 @@ body{
     }
     
 }
-.header-menu{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: calc(0.8rem + 1vw);
-    padding: 0 2%;
-    font-size: calc(0.2em + 1vw);
-    justify-content: space-between;
-    border-top: 1px solid var(--azulClaro);
-    border-bottom: 1px solid var(--azulClaro);
-    color: var(--azulClaro);
-    font-weight: 100;
-        h4{
-            font-weight: 100;
-        }
-       
-        a{
-            text-decoration: none;
-            color: black;
-            padding: 5px;
-        }
-       
-        
-    
-}
-.header-submenu{
-
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        gap:1rem ;
-        row-gap: 1rem;
-        font-size: calc(0.2em + 1vw);
-    
-
-}
-
-.img-grande-container{
-    display: flex;
-    padding: calc(0.8rem + 1vw) 2% 0 2%;
-    img{
-        border-radius: 5px;
-        width: 100%;
-        aspect-ratio: 189/55;
-        object-fit: cover;
-        box-shadow: 1px 1px 10px var(--azulClaro);
-
-    }
-}
-.title-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: clamp(0.9rem, 1.8vw, 1.5rem);
-    padding: calc(0.8rem + 1vw) 2% 0 2%;
-    font-weight: 100;
-    h3{
-        font-weight: 100;
-    }
-    a{
-        text-decoration: none;
-        color: var(--azulClaro);
-    }
-}
-.card-container{
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(2,1fr);
-    gap: 1rem;
-    padding: 1% 2% 0 2%;
-    .card,.card-five-card{
-        color: #000000;
-        padding-bottom: 2%;
-        text-decoration: none;
-        outline: 1px solid var(--azulClaro);
-        overflow: hidden;
-        aspect-ratio:2/3;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;  
-        font-size: calc(1vw - 1px);
-        box-shadow: 1px 1px 10px var(--azulClaro);
-
-
-        img{
-            width: 100%;
-            aspect-ratio: 96/73;
-            object-fit: cover;
-        }
-        .description{
-            padding: 0 2%;
-            width: 100%;
-            aspect-ratio: 100/20;
-            text-wrap: balance;
-            text-align: center;
-            text-overflow: ellipsis;
-            overflow-y: scroll;
-            text-decoration: none;
-            scrollbar-width: none;
-        
-            
-
-        }
-        .details{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .price{
-            background: var(--azulClaro);
-            border-radius: 5px;
-            padding: 5%;
-            color: var(--blanco);
-            b{
-                font-weight: 100;
-            }
-
-        }
-        &:hover{
-            outline: 2px solid var(--azulClaro);
-
-        }
-    }
-
-}
-
-.five-card{
-    grid-template-rows: none; 
-}
-
-.container-three-card,.container-two-card{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: none;
-    gap: 1rem;
-    padding: 1rem 2% 0 2%;
-
-    .three-card,.two-card{
-        box-shadow: 1px 1px 10px var(--azulClaro);
-
-        border-radius: 5px;
-        width: 100%;
-        aspect-ratio: 36/25;
-        object-fit: cover;
-    }
-}
-
-.container-two-card{
-    grid-template-columns: repeat(2,1fr);
-
-    .two-card{
-        aspect-ratio: 610/307;
-    }
-}
 
 /* DE LOS LINKS */
 .container-links{
@@ -434,34 +276,7 @@ footer{
             }
         }
     }
-    .header-menu,.header-submenu{
-        display: none;
-    }
-    .card-container{
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(2,1fr);
-
-        .card:nth-last-child(-n+2) {
-            display: none;
-        }
-        .card,.card-five-card{
-            font-size: calc(3px + 1vw);
-        }
-    }
-    .five-card{
-        grid-template-rows: none; 
-
-        .card-five-card:nth-last-child(-n+1){
-            display: none;
-        }
-    }
-
-    .container-three-card{
-        grid-template-columns: repeat(2,1fr);
-        .three-card:nth-last-child(-n+1) {
-            display: none;
-        }
-    }
+    
     footer{
         font-size: calc(3px + 1vw);
     
@@ -473,26 +288,7 @@ footer{
 
 @media (max-width:780px) {
   
-    .card-container{
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,1fr);
-
-        .card:nth-last-child(-n+4) {
-            display: none;
-        }
-
-        .card,.card-five-card{
-            font-size: calc(4px + 1vw);
-        }
-        
-    }
-    .five-card{
-        grid-template-rows: none; 
-
-        .card-five-card:nth-last-child(-n+2){
-            display: none;
-        }
-    }
+    
     footer{
         font-size: calc(4px + 1vw);
     
@@ -507,41 +303,7 @@ footer{
             }
         }
     }
-    .card-container{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2,1fr);
-        
-        .card:nth-last-child(-n+6) {
-            display: none;
-        }
-
-        .card,.card-five-card{
-            font-size: calc(6px + 1vw);
-        }
-        
-    }
-    .five-card{
-        grid-template-rows: none; 
-
-        .card-five-card:nth-last-child(-n+3){
-            display: none;
-        }
-    }
-
-    .container-three-card{
-        grid-template-columns: 1fr;
-        .three-card:nth-last-child(-n+2) {
-            display: none;
-        }
-    }
-
-    .container-two-card{
-        grid-template-columns: 1fr;
-    
-        .two-card:nth-last-child(-n+1) {
-            display: none;
-        }
-    }
+   
     .container-footer{
         flex-direction: column !important;
     }
@@ -552,28 +314,24 @@ footer{
 }
 @media (max-width:270px) {
 
-    .card-container{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(2,1fr);
-
-        .card:nth-last-child(-n+8) {
-            display: none;
-        }
-        
-    }
-    .five-card{
-        grid-template-rows: none; 
-
-        .card-five-card:nth-last-child(-n+4){
-            display: none;
-        }
-    }
-
-
+    
     .container-links{
         bottom: 0.5rem;
         right: 0.5rem;
         
     }
+    
+}
+
+.container-product{
+    padding: 0 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .img-product{
+            width: 50%;
+        aspect-ratio: 155/118;
+        }
     
 }

@@ -1,4 +1,8 @@
 
+let menu=document.querySelector('.menu')
+
+let clickMenu=document.querySelector('.click-menu')
+
 let button=document.querySelector('.button')
 
 let mas=document.querySelector('.mas')
@@ -37,3 +41,10 @@ window.onscroll = function (){
         button.classList.remove('mostrarse');
     }
 }
+
+
+menu.addEventListener("click", ()=>{
+    
+        clickMenu.classList.toggle('verse')
+   
+});
