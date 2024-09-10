@@ -29,8 +29,10 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: calc(0.5em + 1vw);
-    padding: calc(1.5rem - 1vw) 0 calc(1.5rem - 1vw) 0;
+    /* font-size: calc(0.5em + 1vw); */
+    font-size: clamp(1rem, 1.8vw, 1.5rem);
+    
+    padding: calc(1rem - 1vw) 0 ;
     position: sticky;
     top: 0;
     gap: 1rem;
@@ -41,7 +43,7 @@ body{
         flex: 3;
         border-radius: 20px;
         border: 1px solid #cfcfcf;
-        padding: 0.7%;
+        padding: 0.5%;
     }
     div{
         flex: 1;
@@ -116,7 +118,9 @@ body{
     align-items: center;
     margin-top: calc(0.8rem + 1vw);
     padding: 0 2%;
-    font-size: calc(0.2em + 1vw);
+    /* font-size: calc(0.2em + 1vw); */
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+
     justify-content: space-between;
     border-top: 1px solid var(--azulClaro);
     border-bottom: 1px solid var(--azulClaro);
@@ -136,7 +140,7 @@ body{
 
 .container-sections{
     width: 100%;
-    padding: calc(0.8rem + 1vw) 10%;
+    padding: calc(0.8rem + 1vw) 12.5%;
     display: flex;
     flex-direction: column;
     gap: calc(0.8rem + 1vw) ;
@@ -169,7 +173,7 @@ body{
     justify-content: space-between;
     align-items: center;
     font-size: clamp(1rem, 1.8vw, 1.5rem);
-    padding: 0.5% 0.5%;
+    padding: 5px;
     h3{
         font-weight: 600;
     }
@@ -422,7 +426,7 @@ footer{
     text-wrap: wrap;
 
    
-   font-size: clamp(1rem, 1.8vw, 1.2rem);
+   font-size: clamp(1rem, 1.5vw, 1.5rem);
     .container-footer{
         display: flex;
         flex-direction: row;
@@ -447,12 +451,13 @@ footer{
     }
     >p{
         text-align: center;
+        padding-bottom: 5px;
     }
     
 }
 
 /* MEDIA QUERYS AQUI */
-@media (max-width:1375px) {
+@media (max-width:1365px) {
     .container-sections{
         padding: calc(0.8rem + 1vw) 0;
     }
@@ -504,7 +509,7 @@ footer{
         }
        
     }
-    .header-menu,.header-submenu{
+    .header-menu{
         display: none;
     }
  
