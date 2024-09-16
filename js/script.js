@@ -48,3 +48,14 @@ menu.addEventListener("click", ()=>{
         clickMenu.classList.toggle('verse')
    
 });
+
+
+// convertir todo a minusculas
+let descripcion=document.querySelectorAll('.description')
+
+
+for(let index of descripcion) {
+    
+    index.innerHTML = index.innerHTML.toLowerCase()
+    
+}
