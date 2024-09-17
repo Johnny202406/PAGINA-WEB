@@ -1,14 +1,5 @@
 
-let menu=document.querySelector('.menu')
-
-let clickMenu=document.querySelector('.click-menu')
-
 let button=document.querySelector('.button')
-
-let mas=document.querySelector('.mas')
-
-const otro=document.querySelectorAll('.otro')
-
 
 button.addEventListener("click", () => 
     window.scroll({ 
@@ -17,18 +8,7 @@ button.addEventListener("click", () =>
      })
 );
 
-mas.addEventListener("click", ()=>{
-    mas.classList.toggle('girar')
-    for(let index of otro) {
-    
-        index.classList.toggle('mostrarse')
-        
-    }
-});
    
-
-
-
 window.onscroll = function (){
     // Obtenemos la posicion del scroll en pantall
     var scroll = document.documentElement.scrollTop || document.body.scrollTop;
@@ -43,16 +23,8 @@ window.onscroll = function (){
 }
 
 
-menu.addEventListener("click", ()=>{
-    
-        clickMenu.classList.toggle('verse')
-   
-});
-
-
 // convertir todo a minusculas
 let descripcion=document.querySelectorAll('.description')
-
 
 for(let index of descripcion) {
     

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adiser Titán tecnológico | Ayacucho</title>
     <link rel="shortcut icon" href="img/soloLogo.png" type="image/ico" /> 
+    <meta name="description" content="Adiser Titán tecnológico | Ayacucho "/>
     <link rel="stylesheet" href="styles.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -14,7 +15,7 @@
     <meta property="og:url" content="https://johnny202406.github.io/PAGINA-WEB/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Adiser Titán tecnológico | Ayacucho">
-    <meta property="og:description" content="Adiser ESTA ES LA DESCRIPCIÓN aqui esta la descripcion">
+    <meta property="og:description" content="Adiser Titán tecnológico | Ayacucho">
     <meta property="og:image" content="https://johnny202406.github.io/PAGINA-WEB/img/soloLogo.png">
 
     <!-- Twitter Meta Tags -->
@@ -22,41 +23,82 @@
     <meta property="twitter:domain" content="webempresa.com">
     <meta property="twitter:url" content="https://johnny202406.github.io/PAGINA-WEB/">
     <meta name="twitter:title" content="Adiser Titán tecnológico | Ayacucho">
-    <meta name="twitter:description" content="ADISER ESTA ES LA DESCRIPCIÓN aqui esta la descripcion">
+    <meta name="twitter:description" content="Adiser Titán tecnológico | Ayacucho">
     <meta name="twitter:image" content="https://johnny202406.github.io/PAGINA-WEB/img/soloLogo.png">
 
     <script type="module" src="js/script.js"></script>
 </head>
 <body>
+    <input type="checkbox" name="" id="checkboxMenu" class="checkboxMenu" hidden>
     <header class="header-top">
         <div class="container-logo">
             <img src="img/ayuda-final.png" alt="logo" srcset="" class="img-logo-horizontal">
         </div>
         <input type="search" name="" id="">
-       
-        <div class="menu"><img src="img/menu.svg" alt="icon-cart"><span>Categorias</span></div>
+        
+        <label class="menu" for="checkboxMenu">
+            <div class="containerLineas">
+                <div class="linea linea1"></div>
+                <div class="linea linea2"></div>
+                <div class="linea linea3"></div>
+            </div>
+            <span>Categorias</span>
+        </label>
     </header>
     <header class="click-menu">
-        
-        <a href="nuevoProducto.html">Nuevo</a>
-        <a href="soloParaGamers.html">Gamers</a>
-        <a href="discosDuros.html">Discos Duros</a>
-        <a href="monitores.html">Monitores</a>
-        <a href="#ubicanos">Ubicanos</a>
-        <a href="#contactos">Contactos</a>
-
-    </header>
+        <a href="#nuevos">
+            <span>Nuevo</span>
+            <img src="img/nuevos.png" alt="" >
+        </a>
+        <a href="#gamers">
+            <span>Gamers</span>
+            <img src="img/gamers.svg" alt="" >
+        </a>
+        <a href="#almacenamiento">
+            <span>Discos Duros</span>
+            <img src="img/discoDuro.svg" alt="" >
+        </a>
+        <a href="#monitores">
+            <span>Monitores</span>
+            <img src="img/monitores.svg" alt="" >
+        </a>
+        <a href="#ubicanos">
+            <span>Ubicanos</span>
+            <img src="img/ubicacion.png" alt="" >
+        </a>
+        <a href="#contactos">
+            <span>Contactos</span>
+            <img src="img/contactos.png" alt="" >
+        </a>
+    </header>
     <header class="header-menu">
        
             <h4>CATEGORIAS</h4>
-            <a href="#nuevos">Nuevo</a>
-            <a href="#gamers">Gamers</a>
-            <a href="#almacenamiento">Discos Duros</a>
-            <a href="#monitores">Monitores</a>
-            <a href="#ubicanos">Ubicanos</a>
-            <a href="#contactos">Contactos</a>
-      
-    </header>
+            <a href="#nuevos">
+                <span>Nuevo</span>
+                <img src="img/nuevos.png" alt="" >
+            </a>
+            <a href="#gamers">
+                <span>Gamers</span>
+                <img src="img/gamers.svg" alt="" >
+            </a>
+            <a href="#almacenamiento">
+                <span>Discos Duros</span>
+                <img src="img/discoDuro.svg" alt="" >
+            </a>
+            <a href="#monitores">
+                <span>Monitores</span>
+                <img src="img/monitores.svg" alt="" >
+            </a>
+            <a href="#ubicanos">
+                <span>Ubicanos</span>
+                <img src="img/ubicacion.png" alt="" >
+            </a>
+            <a href="#contactos">
+                <span>Contactos</span>
+                <img src="img/contactos.png" alt="" >
+            </a>
+        </header>
 
     <div class="container-sections">
         <div class="img-grande-container">
@@ -70,7 +112,7 @@
 
             <div class="card-container">
                 <div class="card">
-                    <a href="producto.html" target="_blank" rel="noopener noreferrer" >
+                    <a href="producto/producto.html" target="_blank" rel="noopener noreferrer" >
                        <img src="https://media.wired.com/photos/5df98d3660d5ad000818260b/1:1/w_1347,h_1347,c_limit/Gear-Decade-10-Best-Products.jpg" alt="">
                     </a>
                     <span class="description">
@@ -87,10 +129,11 @@
                         COMBO 3 EN UNO ANTRYX GC-3100 X3 WHITE (AGC-3100X3WBL-SP) TECLADO MECANICO | SWITCH BLUE | MOUSE
                     </span>
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                    <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                     <span class="price">
                             S/3 407.21
@@ -104,10 +147,11 @@
                     <span class="description">
                         COMBO 3 EN UNO ANTRYX GC-3100 X3 WHITE (AGC-3100X3WBL-SP) TECLADO MECANICO | SWITCH BLUE | MOUSE
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                     <span class="price">
                         S/899.00
@@ -120,10 +164,11 @@
                     <span class="description">
                         COMBO 3 EN UNO ANTRYX GC-3100 X3 WHITE (AGC-3100X3WBL-SP) 
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -136,10 +181,11 @@
                     <span class="description">
                         COMBO 3 EN UNO ANTRYX GC-3100 X3 WHITE (AGC-3100X3WBL-SP) TECLADO MECANICO | SWITCH BLUE | MOUSE
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                     <span class="price">
                         S/899.00
@@ -152,10 +198,11 @@
                     <span class="description">
                         COMBO 3 EN UNO ANTRYX GC-3100 X3 WHITE (AGC-3100X3WBL-SP) TECLADO MECANICO | SWITCH BLUE | MOUSE
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                     <span class="price">
                             S/899.00 
@@ -168,10 +215,11 @@
                     <span class="description">
                         COMBO 3 EN UNO ANTRYX GC-3100 X3 WHITE (AGC-3100X3WBL-SP) TECLADO MECANICO | SWITCH BLUE | MOUSE
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                     <span class="price">
                         S/899.00 
@@ -184,10 +232,11 @@
                     <span class="description">
                         COMBO 3 EN UNO ANTRYX GC-3100 X3 WHITE (AGC-3100X3WBL-SP) TECLADO MECANICO | SWITCH BLUE | MOUSE
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                     <span class="price">
                             S/899.00
@@ -200,10 +249,11 @@
                     <span class="description">
                         COMBO 3 EN UNO ANTRYX GC-3100 X3 WHITE (AGC-3100X3WBL-SP) TECLADO MECANICO | SWITCH BLUE | MOUSE
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                     <span class="price">
                             S/899.00
@@ -219,10 +269,11 @@
                         COMBO 3 EN UNO ANTRYX GC-3100 X3 WHITE (AGC-3100X3WBL-SP) TECLADO MECANICO | SWITCH BLUE | MOUSE
                     </span>
 
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -236,10 +287,11 @@
                     <span class="description">
                         COMBO 3 EN UNO ANTRYX GC-3100 X3 WHITE (AGC-3100X3WBL-SP) TECLADO MECANICO | SWITCH BLUE | MOUSE
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -253,10 +305,11 @@
                     <span class="description">
                         COMBO 3 EN UNO ANTRYX GC-3100 X3 WHITE (AGC-3100X3WBL-SP) TECLADO MECANICO | SWITCH BLUE | MOUSE
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -270,10 +323,11 @@
                     <span class="description">
                         COMBO 3 EN UNO ANTRYX GC-3100 X3 WHITE (AGC-3100X3WBL-SP) TECLADO MECANICO | SWITCH BLUE | MOUSE
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -354,7 +408,7 @@
 
             <div class="card-container five-card">
                 <div class=" card-five-card">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="producto/producto2.html" target="_blank" rel="noopener noreferrer">
                         <img src="https://http2.mlstatic.com/D_Q_NP_2X_700383-MPE76887442128_062024-E.webp" alt="" loading="lazy">
                     </a>
                     <span class="description">
@@ -366,10 +420,11 @@
                         MOUSE INALAMBRICO RAZER VIPER V2 PRO FOCUS GAMING, BLANCO, HASTA 30000 DPI, CON RECEPTOR USB
                         
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -384,10 +439,11 @@
                         
                         MOUSE INALAMBRICO RAZER VIPER V2 PRO FOCUS GAMING, BLANCO, HASTA 30000 DPI, CON RECEPTOR USB
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -401,10 +457,11 @@
                         
                         MOUSE INALAMBRICO RAZER VIPER V2 PRO FOCUS GAMING, BLANCO, HASTA 30000 DPI, CON RECEPTOR USB
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -418,10 +475,11 @@
                         
                         MOUSE INALAMBRICO RAZER VIPER V2 PRO FOCUS GAMING, BLANCO, HASTA 30000 DPI, CON RECEPTOR USB
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -435,10 +493,11 @@
                         
                         MOUSE INALAMBRICO RAZER VIPER V2 PRO FOCUS GAMING, BLANCO, HASTA 30000 DPI, CON RECEPTOR USB
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -452,10 +511,11 @@
                         
                         MOUSE INALAMBRICO RAZER VIPER V2 PRO FOCUS GAMING, BLANCO, HASTA 30000 DPI, CON RECEPTOR USB
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -487,7 +547,7 @@
             </div>
             <div class="card-container five-card">
                 <div class="card-five-card">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="producto/producto3.html" target="_blank" rel="noopener noreferrer">
                         <img src="https://http2.mlstatic.com/D_Q_NP_2X_607032-MPE75323635682_032024-E.webp" alt="" loading="lazy">
                     </a>
                     <span class="description">
@@ -497,10 +557,11 @@
                         UNIDAD DE ALMACENAMIENTO SSD SATA 2.5 SAMSUNG 500GB 870 EVO (MZ-77E500E) 560MB/S
                         
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -513,10 +574,11 @@
                         UNIDAD DE ALMACENAMIENTO SSD SATA 2.5 SAMSUNG 500GB 870 EVO (MZ-77E500E) 560MB/S
                         
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -529,10 +591,11 @@
                         UNIDAD DE ALMACENAMIENTO SSD SATA 2.5 SAMSUNG 500GB 870 EVO (MZ-77E500E) 560MB/S
                         
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -546,10 +609,11 @@
                         UNIDAD DE ALMACENAMIENTO SSD SATA 2.5 SAMSUNG 500GB 870 EVO (MZ-77E500E) 560MB/S
                     
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -562,10 +626,11 @@
                         UNIDAD DE ALMACENAMIENTO SSD SATA 2.5 SAMSUNG 500GB 870 EVO (MZ-77E500E) 560MB/S
                         
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -578,10 +643,11 @@
                         UNIDAD DE ALMACENAMIENTO SSD SATA 2.5 SAMSUNG 500GB 870 EVO (MZ-77E500E) 560MB/S
                         
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -608,7 +674,7 @@
             </div>
             <div class="card-container five-card">
                 <div class="card-five-card">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="producto/producto4.html" target="_blank" rel="noopener noreferrer">
                         <img src="https://http2.mlstatic.com/D_Q_NP_2X_818732-MLU74085818933_012024-V.webp" alt="" loading="lazy">
                     </a>                    
                     <span class="description">
@@ -619,10 +685,11 @@
                         MONITOR LG 27 PULGADAS, LED IPS 27UL500, RESOLUCION 3840 X 2160 4K , PUERTO HDMI, FRECUENCIA 60
                         
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -637,10 +704,11 @@
                         MONITOR LG 27 PULGADAS, LED IPS 27UL500, RESOLUCION 3840 X 2160 4K , PUERTO HDMI, FRECUENCIA 60
                         
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -655,10 +723,11 @@
                         MONITOR LG 27 PULGADAS, LED IPS 27UL500, RESOLUCION 3840 X 2160 4K , PUERTO HDMI, FRECUENCIA 60
                         
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -673,10 +742,11 @@
                         MONITOR LG 27 PULGADAS, LED IPS 27UL500, RESOLUCION 3840 X 2160 4K , PUERTO HDMI, FRECUENCIA 60
                         
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -691,10 +761,11 @@
                         MONITOR LG 27 PULGADAS, LED IPS 27UL500, RESOLUCION 3840 X 2160 4K , PUERTO HDMI, FRECUENCIA 60
                         
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -709,10 +780,11 @@
                         MONITOR LG 27 PULGADAS, LED IPS 27UL500, RESOLUCION 3840 X 2160 4K , PUERTO HDMI, FRECUENCIA 60
                         
                     </span>
-                    <span class="details">
-                        <span>*****</span>
-                        
-                        <span><b>STOCK:</b>+10</span>
+                     <span class="stock">
+                        <b>STOCK:</b>
+                        <span class="number-stock">
+                            +10
+                        </span>
                     </span>
                    <span class="price">
                             S/899.00 
@@ -742,34 +814,30 @@
         <div class="button">
             <img src="img/arrow.svg" alt="" >
         </div>
-     
 
-        
-    
         <a href="https://wa.link/c6i1lt" target="_blank" rel="noopener noreferrer" class="div-wasap">
             <img src="img/whatsapp.svg" alt="" srcset="" class="wasap">
         </a>
 
-    
-        <div class="items">
-            <div class="mas">
-                <img src="img/mas.svg" alt="" >
-            </div>
+        <input type="checkbox" name="" id="checkboxRedes" class="checkboxRedes" hidden>
 
-            <a href="https://web.facebook.com/p/Adiser-Tit%C3%A1n-tecnol%C3%B3gico-100087465367309/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer" class="otro fb">
+        <div class="Redes">
+            <label class="mas" for="checkboxRedes">
+                <img src="img/mas.svg" alt="" >
+            </label>
+
+            <a href="https://web.facebook.com/p/Adiser-Tit%C3%A1n-tecnol%C3%B3gico-100087465367309/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer" class="red fb">
                 <img src="img/facebook.svg" alt="" >
             </a>
-            <a href="https://www.instagram.com/adiser_tecnologia/" target="_blank" rel="noopener noreferrer" class="otro instagram">
+            <a href="https://www.instagram.com/adiser_tecnologia/" target="_blank" rel="noopener noreferrer" class="red instagram">
                 <img src="img/instagram.svg" alt="" >
             </a>
-            <a href="https://www.tiktok.com/@adiser_tecnologia" target="_blank" rel="noopener noreferrer" class="otro tiktok">
+            <a href="https://www.tiktok.com/@adiser_tecnologia" target="_blank" rel="noopener noreferrer" class="red tiktok">
                 <img src="img/tiktok.svg" alt="" >
             </a>
-            <a href="http://" target="_blank" rel="noopener noreferrer" class="otro youtube">
+            <a href="http://" target="_blank" rel="noopener noreferrer" class="red youtube">
                 <img src="img/youtube.svg" alt="" >
-            </a>
-            
-            
+            </a>     
         </div>
       
     </div>

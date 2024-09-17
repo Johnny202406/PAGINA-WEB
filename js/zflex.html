@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            width: 100%;
+            min-height: 100dvh;
+        }
+        .contenedor {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+
+        .hijo {
+          flex: 1;
+          background-color: #f0f0f0;
+          text-align: center;
+        }
+
+        @media (max-width: 700px) {
+          .hijo {
+            flex-basis: 50%; 
+          }
+
+          .hijo:nth-child(3) {
+
+            flex-basis: 100%; /* Hace que el tercer hijo ocupe el ancho completo en una nueva fila */
+            max-width: 30%;
+          }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="hijo">Hijo 1</div>
+        <div class="hijo">Hijo 2</div>
+        <div class="hijo">Hijo 3</div>
+      </div>
+      
+</body>
+</html>
