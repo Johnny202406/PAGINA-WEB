@@ -29,7 +29,6 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* font-size: calc(0.5em + 1vw); */
     font-size: clamp(1rem, 1.8vw, 1.5rem);
     
     padding: 1px 0;
@@ -65,10 +64,12 @@ body{
             flex-direction: column;
             gap: var(--barra);
             justify-content: center;
+            align-items: end;
             position: relative;
             .linea{
                 min-width: 20px;
                 width: 100%;
+                max-width: 50px;
                 background: var(--negroOscuro);
                 height: var(--barra);
                 border-radius: 25px;
@@ -116,6 +117,7 @@ body{
     transform:translateX(-100%);
     opacity: 0;
     position: fixed;
+    z-index: 2;
     height: 100%;
     a{  
         padding: 5px;
@@ -141,7 +143,6 @@ body{
     align-items: center;
     margin-top: calc(1rem + 0.1vw);
     padding: 0 2%;
-    /* font-size: calc(0.2em + 1vw); */
     font-size: clamp(1rem, 1.5vw, 1.5rem);
     justify-content: space-between;
     border-top: 1px solid var(--azulClaro);
@@ -179,7 +180,7 @@ body{
 .img-grande-container{
     img{
         width: 100%;
-        aspect-ratio: 189/55;
+        aspect-ratio: 38/11;
         object-fit: cover;
         vertical-align: bottom;
 
@@ -256,7 +257,7 @@ body{
             scrollbar-width: none;
             display: -webkit-box;
             -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;    
+            -webkit-box-orient: vertical;   
         }
         .stock{
             display: flex;
@@ -309,17 +310,14 @@ body{
     padding: 1rem ;
     background: white;
     .three-card,.two-card{
-        width: 100%;
         border-radius: 5px;
         width: 100%;
-        aspect-ratio: 36/25;
-        object-fit: cover;
-        vertical-align: bottom;
         img{
             width: 100%;
             border-radius: 5px;
             width: 100%;
-            aspect-ratio: 36/25;
+            aspect-ratio: 5/3;
+
             object-fit: cover;
             vertical-align: bottom;
         }
@@ -330,9 +328,8 @@ body{
     grid-auto-columns: calc(100% / var(--container-two-card) ); 
 
     .two-card{
-        aspect-ratio: 610/307;
         img{
-            aspect-ratio: 610/307;
+            aspect-ratio: 21/9;
 
         }
     }
@@ -445,6 +442,7 @@ body{
 }
 
 
+
 footer{
     background: linear-gradient(0deg, var(--blanco) 50%,var(--azulClaro) 100%);
     display: flex;
@@ -530,9 +528,11 @@ footer{
         }
         
         .menu{
+
             .containerLineas{
                 width: var(--tamaño2);
                 flex: none;
+                align-items: initial;
             }
         
             span{
@@ -576,6 +576,9 @@ footer{
     .container-footer{
         flex-direction: column !important;
     }
+    .container-three-card,.container-two-card{
+        padding: 0.7rem;
+    }
 }
 
 
@@ -593,10 +596,15 @@ footer{
         right: 0.5rem;
         
     }
+    .title-section{
+        flex-direction: column;
+    }
+    .card-container{
+        .card,.card-five-card{
+            gap: 0.5rem;
+            height: max-content;
+        }
+    
+    }
 }
 
-
-
-a{
-    grid-template-columns: 1fr;
-}
