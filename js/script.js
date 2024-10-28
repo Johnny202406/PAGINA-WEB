@@ -31,6 +31,14 @@ for(let index of descripcion) {
     index.innerHTML = index.innerHTML.toLowerCase()
     
 }
+let stock=document.querySelectorAll('.stock')
+
+for(let index of stock) {
+    
+    index.innerHTML = index.innerHTML.toLowerCase()
+    
+}
+
 
 
 // CARRUSEL
@@ -67,3 +75,48 @@ document.querySelector('.izquierda').addEventListener('click', () => {
 document.querySelector('.derecha').addEventListener('click', () => {
     moveTo(currentIndex + 1);
 });
+
+
+
+document.querySelectorAll('.antesCardContainer').forEach(container => {
+    const cardContainer = container.querySelector('.card-container');
+    const leftButton = container.querySelector('.izquierda');
+    const rightButton = container.querySelector('.derecha');
+    let currentIndex = 0;
+
+    // Calcular el ancho de las tarjetas
+    const updateCardWidth = () => {
+        const cards = cardContainer.children;
+        return cards.length > 0 ? cards[0].offsetWidth : 0;
+    };
+
+    const cardWidth = updateCardWidth(); // Ancho inicial de tarjeta
+
+    leftButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+
+    rightButton.addEventListener('click', () => {
+        if (currentIndex < cardContainer.children.length - 1) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+
+    function updateCarousel() {
+        cardContainer.scrollLeft = currentIndex * cardWidth; // Desplazar usando scrollLeft
+    }
+
+    // Ajustar ancho al redimensionar
+    window.addEventListener('resize', () => {
+        const newCardWidth = updateCardWidth();
+        if (newCardWidth !== cardWidth) {
+            currentIndex = Math.min(currentIndex, cardContainer.children.length - 1);
+            updateCarousel();
+        }
+    });
+});
+
